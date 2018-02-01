@@ -1,0 +1,24 @@
+{
+  "name": "time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run serve & npm run watch",
+    "serve": "parcel ./src/index.html",
+    "watch": "browser-sync start -f dist -p localhost:1234 --no-open",
+    "build": "parcel build ./src/index.html --out-dir build --public-url /clockdown/",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gh-pages": "^1.1.0",
+    "lodash": "^4.17.4",
+    "luxon": "^0.4.0",
+    "parcel-bundler": "^1.5.1"
+  }
+}
