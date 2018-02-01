@@ -9,7 +9,7 @@
     "serve": "parcel ./src/index.html",
     "watch": "browser-sync start -f dist -p localhost:1234 --no-open",
     "build": "parcel build ./src/index.html --out-dir build --public-url /clockdown/",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "keywords": [],
   "author": "",

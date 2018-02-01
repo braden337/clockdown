@@ -66,8 +66,6 @@ function getTimeRemaining(later) {
 }
 
 function createTimer(ms) {
-  endInput.value = hourMinute()
-
   return setInterval(function() {
     clock.innerText = document.title = getTimeRemaining(new Date(ms))
   }, 1000)
