@@ -74,7 +74,6 @@ function createTimer(ms) {
 (function() {
   window.time = getTime()
   if (window.time) {
-    endInput.value = hourMinute()
     window.timer = createTimer(window.time)
   }
 })()
